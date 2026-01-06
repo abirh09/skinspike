@@ -1,6 +1,9 @@
 # SkinSpike - CS2 Steam Market Price Tracker
 
-![SkinSpike Logo](public/logo.png)
+<p align="center">
+  <img src="public/logo.png" alt="SkinSpike Logo" width="128"/>
+</p>
+
 
 ---
 
