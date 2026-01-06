@@ -1,36 +1,65 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# SkinSpike - CS2 Steam Market Price Tracker
 
-## Getting Started
+![SkinSpike Logo](public/logo.png)
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Overview
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+**SkinSpike** is a web application that tracks and displays **recent price fluctuations** for Counter-Strike 2 (CS2) skins and collectibles on the Steam Community Market. The platform fetches historical and updated price data at regular intervals using **Appwrite functions** and presents it in a clean, intuitive interface.  
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+SkinSpike helps enthusiasts and traders observe notable price surges or crashes, analyze trends, and explore item histories—all in a visually responsive web app.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+This project is a personal initiative to explore **full-stack development**, **serverless data fetching**, and **modern UI/UX design**.
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## Key Features
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Price Updates**: Fetches CS2 item prices using **Appwrite serverless functions**.
+- **Price Change Indicators**: Highlights items experiencing significant surges or crashes.
+- **Item Details**: Shows item name, old/current prices, percentage change, detection time, and a direct link to the Steam Market.
+- **Filtering & Pagination**: Filter by `all`, `surge`, or `crash` and browse paginated results.
+- **Responsive Design**: Mobile-friendly layout with a hamburger menu for easy navigation.
+- **Informational Pages**: Includes About and Contact pages with disclaimers.
+- **Error Handling**: Gracefully handles loading states and when no items are detected.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+> ⚠️ Note: SkinSpike **does not provide real-time alerts**. Prices are periodically updated using Appwrite functions and reflect snapshots of the Steam Market.
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Technologies Used
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **Frontend**: Next.js (React framework for SSR & static site generation)  
+- **Backend / Data Fetching**: Appwrite Functions for retrieving Steam Market data  
+- **Styling & UI**: Tailwind CSS, Lucide React icons  
+- **State Management**: React Hooks  
+- **Deployment**: Vercel for hosting and automatic builds  
+- **Other**: JavaScript (ES6+), Fetch API  
+
+---
+
+## How It Works
+
+1. **Data Collection**: Appwrite functions fetch market prices at scheduled intervals.  
+2. **Data Storage**: Historical price snapshots are stored in Appwrite database documents.  
+3. **Frontend Rendering**: Next.js app fetches data from Appwrite endpoints and displays items with visual indicators for price changes.  
+4. **Filtering & Pagination**: Users can filter by price surge, crash, or view all, and navigate through pages of items.
+
+---
+
+## Deployment
+
+The live application is hosted on **Vercel**:  
+
+[🌐 SkinSpike Live Demo](https://skinspike-92812y460-abirs-projects-10fcc921.vercel.app/)
+
+---
+
+## Installation & Local Setup
+
+To run SkinSpike locally:
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/skinspike.git
