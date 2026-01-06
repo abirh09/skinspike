@@ -52,7 +52,7 @@ This project is a personal initiative to explore **full-stack development**, **s
 
 The live application is hosted on **Vercel**:  
 
-[🌐 SkinSpike Live Demo](https://skinspike-92812y460-abirs-projects-10fcc921.vercel.app/)
+[🌐 SkinSpike Live Demo](https://skinspike.vercel.app/)
 
 ---
 
