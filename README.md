@@ -40,7 +40,7 @@ SkinSpike helps enthusiasts and traders observe notable price surges or crashes,
 
 The live application is hosted on **Vercel**:  
 
-[🌐 SkinSpike Live Demo](https://skinspike.vercel.app/)
+[🌐 SkinSpike Live Demo](https://www.skinspike.com/)
 
 ---
 
