@@ -11,7 +11,7 @@ export default function Home() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [pagination, setPagination] = useState({
     total: 0,
-    limit: 10,
+    limit: 9,
     currentPage: 1,
     totalPages: 0,
     hasNextPage: false,
@@ -28,7 +28,7 @@ export default function Home() {
     try {
       const typeParam = filter !== 'all' ? `&type=${filter}` : '';
       const res = await fetch(
-        `https://6957085d0002702104c4.fra.appwrite.run?limit=10&page=${pagination.currentPage}${typeParam}`,
+        `https://6957085d0002702104c4.fra.appwrite.run?limit=9&page=${pagination.currentPage}${typeParam}`,
         {
           method: 'GET',
         }
