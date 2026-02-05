@@ -27,12 +27,14 @@ export default function Home() {
 
     try {
       const typeParam = filter !== 'all' ? `&type=${filter}` : '';
-      const res = await fetch(
-        `https://6957085d0002702104c4.fra.appwrite.run?limit=9&page=${pagination.currentPage}${typeParam}`,
-        {
-          method: 'GET',
-        }
-      );
+      const apiUrl = process.env.NEXT_PUBLIC_API_URL;
+    
+    const res = await fetch(
+      `${apiUrl}?limit=9&page=${pagination.currentPage}${typeParam}`,
+      {
+        method: 'GET',
+      }
+    );
 
       if (!res.ok) {
         throw new Error(`HTTP ${res.status}`);
